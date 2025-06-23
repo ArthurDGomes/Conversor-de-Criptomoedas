@@ -13,6 +13,9 @@ dotenv.config();
 const app = express();
 const PORT = 3000;
 
+import cors from 'cors';
+app.use(cors()); 
+
 app.use(express.json());
 
 const connectDB = async () => {
@@ -38,6 +41,8 @@ connectDB();
 app.use("/api/auth", authRoutes);
 app.use("/api/conversions", conversionsRoutes);
 app.use("/api/favorites", favoritesRoutes);
+
+
 
 app.listen(PORT, () => console.log(`O servidor está rodando na porta ${PORT}`));
 
