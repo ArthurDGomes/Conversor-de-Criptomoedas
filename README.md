@@ -27,3 +27,4 @@ Permite conversão de criptomoedas, gerenciamento de favoritos e histórico de c
 
 ---
 
+OBS: Por questões de segurança o arquivo .env está vazio. Nele se encontraria o acesso da base de dados e a senha Token.
